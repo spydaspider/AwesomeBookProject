@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Awesome Books</title>
+  </head>
+  <body>
+    <header>
+       <nav>
+        <div class = "nav-wrapper">
+          <div class = "left">Books</div>
+          <div class = "right">
+            <ul>
+              <li class = "list">List</li>
+              <li class = "add-new">Add-New</li>
+              <li class = "contact">Contact</li>
+            </ul>
+          </div>
+        </div>
+       </nav>
+       <div class = "mobile-menu">
+        <div class = "close">
+           <span class = "x-bar"></span>
+           <span class = "x-bar"></span>
+           <span class = "x-bar"></span>
+        </div>
+        <ul>
+          <li class = "m-list">List</li>
+          <li class = "m-add-new">Add-New</li>
+          <li class = "m-contact">Contact</li>
+        </ul>
+       </div>
+    </header>
+    <main>
+    <div class = "grid-container">
+    <div class="container">
+      <div class = "hamburger">
+        <span class = "bar"></span>
+        <span class = "bar"></span>
+        <span class = "bar"></span>
+      </div>
+      <p id = "display-date"></p>
+
+      <div class = "contact-wrapper">
+        <h3>Con<span class = "cinf">tact Info</span>rmation</h3>
+        <p>Do have any questions or you just want to say "Hello? You can reach out to us!</p>
+         <ul>
+          <li>Out e-mail spydaspider@gmail.com</li>
+          <li>Our phone number: 0547231966</li>
+          <li>Our address Ablekuma Agape</li>
+         </ul>
+      </div>
+      <div class="book-wrapper">
+        <table class = "book-table">
+          <h2>My<span class = "style-bl">Book</span>List</h2>
+          <tbody id = "table-body">
+          </tbody>
+           
+        </table>
+      </div>
+      
+      <form class="form-input" id="form">
+        <br />
+        <h2>Add <span class = "new">New</span> Books</h2>
+        <h4 class = "success grid">You have successfully added a book</h4>
+        <h4 class = "error grid">All fields required</h4>
+        
+        <input type="text" placeholder="Title" class="title" /><br /><br />
+        <input type="text" placeholder="Author" class="author" /> <br /><br />
+        <button type="submit" class="submit">Add</button>
+      </form>
+  
+    </div>
+    </div>
+    </main>
+    <footer>
+      <div class = "base">Copy right...</div>
+    </footer>
+
+
+    <script src="awesome.js"></script>
+  </body>
+</html>
