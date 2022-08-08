@@ -1,78 +1,8 @@
-/* eslint-disable max-classes-per-file */
+import BookStore from './modules/createBooks.js';
+import BookStorage from './modules/localStore.js';
+import BasicUI from './modules/basicUI.js'; 
 
-class BookStorage {
-  static getBookFromLS() {
-    let books;
-    if (localStorage.getItem('books') === null) {
-      books = [];
-    } else {
-      books = JSON.parse(localStorage.getItem('books'));
-    }
-    return books;
-  }
-
-  static addBookToLS(book) {
-    const books = BookStorage.getBookFromLS();
-    books.push(book);
-    localStorage.setItem('books', JSON.stringify(books));
-  }
-
-  static removeBookFromLS(e) {
-    const books = BookStorage.getBookFromLS();
-    const children = Array.from(e.parentElement.parentElement.children);
-    for (let i = 0; i < books.length; i += 1) {
-      if (children[0].textContent.replaceAll('"', '') === `${books[i].title}     by     ${books[i].author}`) {
-        books.splice(i, 1);
-      }
-    }
-
-    localStorage.setItem('books', JSON.stringify(books));
-  }
-}
-class BookStore {
-  constructor(title, author) {
-    this.title = title;
-    this.author = author;
-  }
-}
-class BasicUI {
-  static showDate() {
-    document.getElementById('display-date').innerHTML = Date();
-  }
-
-  static displayBooks() {
-    const StoredBooks = BookStorage.getBookFromLS();
-
-    const books = StoredBooks;
-    books.forEach((book) => BasicUI.addBooksToDom(book));
-  }
-
-  static addBooksToDom(book) {
-    const tableBody = document.getElementById('table-body');
-    tableBody.insertAdjacentHTML(
-      'beforeend',
-      `
-            <tr>
-            <td class = "grid-left">"${book.title}"     by     ${book.author}</td>
-            <td class = "grid-right"><button class = "remove" type = 'submit'>Remove</button></td>
-            </tr>
-            `,
-    );
-  }
-
-  static clearFields() {
-    document.querySelector('.title').value = '';
-    document.querySelector('.author').value = '';
-  }
-
-  static removeBooksFromDom(e) {
-    if (e.className === 'remove') {
-      e.parentElement.parentElement.remove();
-    }
-  }
-}
-// display date
-document.addEventListener('DOMContentLoaded', BasicUI.showDate);
+ document.addEventListener('DOMContentLoaded', BasicUI.showDate);
 // Event: Display Books.
 document.addEventListener('DOMContentLoaded', BasicUI.displayBooks);
 
@@ -113,6 +43,7 @@ document.querySelector('.list').addEventListener('click', () => {
   bookWrapper.classList.remove('active');
   contactWrapper.classList.remove('active');
   formInput.classList.remove('active');
+
 });
 document.querySelector('.add-new').addEventListener('click', () => {
   bookWrapper.classList.add('active');
@@ -153,3 +84,4 @@ document.querySelector('.m-contact').addEventListener('click', () => {
   formInput.classList.remove('active');
   mobileMenu.classList.remove('active');
 });
+ 
