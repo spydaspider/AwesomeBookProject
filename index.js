@@ -1,5 +1,6 @@
 import BookStore from './modules/createBooks.js';
 import BasicUI from './modules/basicUI.js';
+import BookStorage from './localStore.js';
 
 document.addEventListener('DOMContentLoaded', BasicUI.showDate);
 // Event: Display Books.
