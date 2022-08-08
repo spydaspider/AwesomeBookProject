@@ -1,8 +1,8 @@
 import BookStore from './modules/createBooks.js';
 import BookStorage from './modules/localStore.js';
-import BasicUI from './modules/basicUI.js'; 
+import BasicUI from './modules/basicUI.js';
 
- document.addEventListener('DOMContentLoaded', BasicUI.showDate);
+document.addEventListener('DOMContentLoaded', BasicUI.showDate);
 // Event: Display Books.
 document.addEventListener('DOMContentLoaded', BasicUI.displayBooks);
 
@@ -43,7 +43,6 @@ document.querySelector('.list').addEventListener('click', () => {
   bookWrapper.classList.remove('active');
   contactWrapper.classList.remove('active');
   formInput.classList.remove('active');
-
 });
 document.querySelector('.add-new').addEventListener('click', () => {
   bookWrapper.classList.add('active');
@@ -84,4 +83,3 @@ document.querySelector('.m-contact').addEventListener('click', () => {
   formInput.classList.remove('active');
   mobileMenu.classList.remove('active');
 });
- 

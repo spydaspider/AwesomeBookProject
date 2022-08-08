@@ -1,17 +1,17 @@
- import BookStorage from './localStore.js';
- 
+import BookStorage from './localStore.js';
+
 export default class BasicUI {
     static showDate = () => {
       document.getElementById('display-date').innerHTML = Date();
     }
-  
+
     static displayBooks = () => {
       const StoredBooks = BookStorage.getBookFromLS();
-  
+
       const books = StoredBooks;
       books.forEach((book) => BasicUI.addBooksToDom(book));
     }
-  
+
     static addBooksToDom = (book) => {
       const tableBody = document.getElementById('table-body');
       tableBody.insertAdjacentHTML(
@@ -24,15 +24,15 @@ export default class BasicUI {
               `,
       );
     }
-  
+
     static clearFields = () => {
       document.querySelector('.title').value = '';
       document.querySelector('.author').value = '';
     }
-  
-    static removeBooksFromDom = (e) =>{
+
+    static removeBooksFromDom = (e) => {
       if (e.className === 'remove') {
         e.parentElement.parentElement.remove();
       }
     }
-  }
+}

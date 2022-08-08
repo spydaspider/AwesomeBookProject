@@ -8,13 +8,13 @@ export default class BookStorage {
       }
       return books;
     }
-  
+
     static addBookToLS = (book) => {
       const books = BookStorage.getBookFromLS();
       books.push(book);
       localStorage.setItem('books', JSON.stringify(books));
     }
-  
+
     static removeBookFromLS = (e) => {
       const books = BookStorage.getBookFromLS();
       const children = Array.from(e.parentElement.parentElement.children);
@@ -23,7 +23,7 @@ export default class BookStorage {
           books.splice(i, 1);
         }
       }
-  
+
       localStorage.setItem('books', JSON.stringify(books));
     }
-  }
+}
