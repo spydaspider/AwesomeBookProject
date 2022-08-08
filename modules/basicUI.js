@@ -1,6 +1,6 @@
 import BookStorage from './localStore.js';
 /* import { DateTime } from './luxon';
- */ 
+ */
 export default class BasicUI {
     static showDate = () => {
       document.getElementById('display-date').innerHTML = Date();
