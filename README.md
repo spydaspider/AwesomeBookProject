@@ -1,58 +1,54 @@
+    
 ![](https://img.shields.io/badge/Microverse-blueviolet)
-
-# Project Name
-
-> Description the project.
+Awesome Books Website
+This website stores a list of books provided by it's users in the local storage. It allows you to remove the books as well.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
+- HTML and CSS and Javascript.
+## Technologies.
+Visual Studio Code.
+nodejs and npm.
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+
 
 
 To get a local copy up and running follow these simple example steps.
+Locate the project folder in the Repository.
+Click on the code button and dowload a zip file for the project locally.
+Locate the index.html file and double click it to view webpage.
 
 ### Prerequisites
+- Basic HTML & CSS knowledge
+- Basic Javasript knowledge
+Node.js, stylelint, browser for displaying it's content.
+install node package manager(npm): npm helps to install stylelint.
+
 
 ### Setup
-
-### Install
+git clone https://github.com/spydaspider/AwesomeBookProject/tree/modularAwesomeBooks
 
 ### Usage
+Navigate through the web page to find the information you need. Use the links in the pages to move to different sections.
 
-### Run tests
 
 ### Deployment
+  Project reside in this Repo. You can clone the repo or download the files manually to your local machine.
 
-
+### Live Demo
 
 ## Authors
 
-👤 **Author1**
+👤 **Dickson Amankwaah**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/spydaspider/Micronaut-Dickson-Amankwah)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/spyda-spider-a64373131/)
 
-👤 **Author2**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
@@ -64,9 +60,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+
 
 ## 📝 License
 
