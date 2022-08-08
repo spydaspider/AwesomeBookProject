@@ -1,9 +1,11 @@
-import BookStorage from './localStore.js';
-/* import { DateTime } from './luxon';
+/* const luxon = require('luxon');
  */
+import { DateTime } from './luxon.min.js';
+import BookStorage from './localStore.js';
+
 export default class BasicUI {
     static showDate = () => {
-      document.getElementById('display-date').innerHTML = Date();
+      document.getElementById('display-date').innerHTML = DateTime.now();
     }
 
     static displayBooks = () => {
