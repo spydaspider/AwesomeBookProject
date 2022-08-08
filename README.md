@@ -30,7 +30,7 @@ install node package manager(npm): npm helps to install stylelint.
 
 
 ### Setup
-git clone https://github.com/spydaspider/capstone-1.git
+git clone https://github.com/spydaspider/AwesomeBookProject/tree/modularAwesomeBooks
 
 ### Usage
 Navigate through the web page to find the information you need. Use the links in the pages to move to different sections.
@@ -40,7 +40,6 @@ Navigate through the web page to find the information you need. Use the links in
   Project reside in this Repo. You can clone the repo or download the files manually to your local machine.
 
 ### Live Demo
-[Link to my Capstone Projects](https://spydaspider.github.io/capstone-1/home.html)
 
 ## Authors
 
